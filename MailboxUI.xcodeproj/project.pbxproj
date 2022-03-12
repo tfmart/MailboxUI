@@ -15,6 +15,10 @@
 		7CB3DEA127DC3CF400628647 /* MailboxUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB3DEA027DC3CF400628647 /* MailboxUIUITests.swift */; };
 		7CB3DEA327DC3CF400628647 /* MailboxUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB3DEA227DC3CF400628647 /* MailboxUIUITestsLaunchTests.swift */; };
 		7CB3DEB027DC3DAB00628647 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB3DEAF27DC3DAB00628647 /* EmptyState.swift */; };
+		7CB3DEB227DC41C400628647 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB3DEB127DC41C400628647 /* SearchBar.swift */; };
+		7CB3DEB427DC451500628647 /* OldSchoolTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB3DEB327DC451500628647 /* OldSchoolTextFieldStyle.swift */; };
+		7CB3DEB627DC466000628647 /* View+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB3DEB527DC466000628647 /* View+Border.swift */; };
+		7CB3DEB827DC4A1200628647 /* InnerShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB3DEB727DC4A1200628647 /* InnerShadow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,10 @@
 		7CB3DEA027DC3CF400628647 /* MailboxUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailboxUIUITests.swift; sourceTree = "<group>"; };
 		7CB3DEA227DC3CF400628647 /* MailboxUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailboxUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7CB3DEAF27DC3DAB00628647 /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
+		7CB3DEB127DC41C400628647 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		7CB3DEB327DC451500628647 /* OldSchoolTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldSchoolTextFieldStyle.swift; sourceTree = "<group>"; };
+		7CB3DEB527DC466000628647 /* View+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Border.swift"; sourceTree = "<group>"; };
+		7CB3DEB727DC4A1200628647 /* InnerShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InnerShadow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,10 @@
 				7CB3DE8927DC3CF400628647 /* Assets.xcassets */,
 				7CB3DE8B27DC3CF400628647 /* Preview Content */,
 				7CB3DEAF27DC3DAB00628647 /* EmptyState.swift */,
+				7CB3DEB127DC41C400628647 /* SearchBar.swift */,
+				7CB3DEB327DC451500628647 /* OldSchoolTextFieldStyle.swift */,
+				7CB3DEB527DC466000628647 /* View+Border.swift */,
+				7CB3DEB727DC4A1200628647 /* InnerShadow.swift */,
 			);
 			path = MailboxUI;
 			sourceTree = "<group>";
@@ -261,7 +273,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CB3DEB027DC3DAB00628647 /* EmptyState.swift in Sources */,
+				7CB3DEB227DC41C400628647 /* SearchBar.swift in Sources */,
+				7CB3DEB827DC4A1200628647 /* InnerShadow.swift in Sources */,
+				7CB3DEB427DC451500628647 /* OldSchoolTextFieldStyle.swift in Sources */,
 				7CB3DE8827DC3CF200628647 /* ContentView.swift in Sources */,
+				7CB3DEB627DC466000628647 /* View+Border.swift in Sources */,
 				7CB3DE8627DC3CF200628647 /* MailboxUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
