@@ -24,8 +24,8 @@ struct SegmentControl: View {
             ZStack {
                 if selectedFilter == option {
                     selectedBackground
+                        .border(.black.opacity(0.16), width: 1)
                 }
-                
                     Text("\(Image(systemName: option.symbol))")
                     .font(.system(size: 18,
                                   weight: .bold,
