@@ -41,6 +41,5 @@ struct NavigationTitleView_Previews: PreviewProvider {
             Color.black
             NavigationTitleView()
         }
-        NavigationTitleView()
     }
 }

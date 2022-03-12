@@ -14,7 +14,14 @@ struct SegmentControl: View {
         LinearGradient(colors: [
             Color(red: 0.424, green: 0.427, blue: 0.427),
             Color(red: 0.702, green: 0.71, blue: 0.71)
-          ], startPoint: .top, endPoint: .bottom)
+        ], startPoint: .top, endPoint: .bottom)
+    }
+    
+    var fauxInnerShadow: some View {
+        LinearGradient(colors: [
+            .clear,
+            .black.opacity(0.2)
+        ], startPoint: .top, endPoint: .bottom)
     }
     
     func image(for option: FilterOption) -> some View {
@@ -23,8 +30,12 @@ struct SegmentControl: View {
         } label: {
             ZStack {
                 if selectedFilter == option {
-                    selectedBackground
-                        .border(.black.opacity(0.16), width: 1)
+                    ZStack(alignment: .bottom) {
+                        selectedBackground
+                            .border(.black.opacity(0.16), width: 1)
+                        fauxInnerShadow
+                            .frame(height: 4)
+                    }
                 }
                     Text("\(Image(systemName: option.symbol))")
                     .font(.system(size: 18,

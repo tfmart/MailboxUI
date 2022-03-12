@@ -14,15 +14,22 @@ struct SearchBar: View {
         return Color(red: 0.702, green: 0.702, blue: 0.702)
     }
     
+    var fauxBackgroundInnerShadow: some View {
+        Color.white.opacity(0.32)
+            .frame(height: 2)
+    }
+    
     var background: some View {
-        LinearGradient(colors: [
-            Color(red: 0.867, green: 0.875, blue: 0.875),
-            Color(red: 0.753, green: 0.761, blue: 0.765)
-        ], startPoint: .top, endPoint: .bottom)
-            .shadow(color: .black.opacity(0.32),
-                    radius: 0,
-                    x: 0,
-                    y: 1)
+        ZStack(alignment: .top) {
+            LinearGradient(colors: [
+                Color(red: 0.867, green: 0.875, blue: 0.875),
+                Color(red: 0.753, green: 0.761, blue: 0.765)
+            ], startPoint: .top, endPoint: .bottom)
+                .shadow(color: .black.opacity(0.32),
+                         radius: 0,
+                         x: 0, y: 1)
+            fauxBackgroundInnerShadow
+        }
     }
     
     var body: some View {
