@@ -45,6 +45,9 @@ struct SearchBar: View {
                                   weight: .bold,
                                   design: .default)) +
                 Text(" Search")
+                    .font(.system(size: 16,
+                                  weight: .regular,
+                                  design: .default))
             }
             .foregroundColor(placeholderColor)
             .padding(.leading, 18)
