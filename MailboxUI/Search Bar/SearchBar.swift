@@ -27,6 +27,7 @@ struct SearchBar: View {
             .textFieldStyle(.oldSchool)
             .padding(6)
             .background(background)
+            .frame(height: 48)
     }
 }
 

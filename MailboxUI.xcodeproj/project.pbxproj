@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C5C1DB027DC586900A3455A /* NavigationTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5C1DAF27DC586900A3455A /* NavigationTitleView.swift */; };
+		7C5C1DB227DC5C9500A3455A /* HalfPill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5C1DB127DC5C9500A3455A /* HalfPill.swift */; };
 		7CB3DE8627DC3CF200628647 /* MailboxUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB3DE8527DC3CF200628647 /* MailboxUIApp.swift */; };
 		7CB3DE8827DC3CF200628647 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB3DE8727DC3CF200628647 /* ContentView.swift */; };
 		7CB3DE8A27DC3CF400628647 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB3DE8927DC3CF400628647 /* Assets.xcassets */; };
@@ -18,7 +20,10 @@
 		7CB3DEB227DC41C400628647 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB3DEB127DC41C400628647 /* SearchBar.swift */; };
 		7CB3DEB427DC451500628647 /* OldSchoolTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB3DEB327DC451500628647 /* OldSchoolTextFieldStyle.swift */; };
 		7CB3DEB627DC466000628647 /* View+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB3DEB527DC466000628647 /* View+Border.swift */; };
-		7CB3DEB827DC4A1200628647 /* InnerShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB3DEB727DC4A1200628647 /* InnerShadow.swift */; };
+		7CB3DEBE27DC4D7400628647 /* FilterOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB3DEBD27DC4D7400628647 /* FilterOption.swift */; };
+		7CB3DEC027DC4DDA00628647 /* SegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB3DEBF27DC4DDA00628647 /* SegmentControl.swift */; };
+		7CB3DEC227DC55AD00628647 /* ComposeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB3DEC127DC55AD00628647 /* ComposeButton.swift */; };
+		7CB3DEC427DC579A00628647 /* MoreButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB3DEC327DC579A00628647 /* MoreButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C5C1DAF27DC586900A3455A /* NavigationTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTitleView.swift; sourceTree = "<group>"; };
+		7C5C1DB127DC5C9500A3455A /* HalfPill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfPill.swift; sourceTree = "<group>"; };
 		7CB3DE8227DC3CF200628647 /* MailboxUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MailboxUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CB3DE8527DC3CF200628647 /* MailboxUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailboxUIApp.swift; sourceTree = "<group>"; };
 		7CB3DE8727DC3CF200628647 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,7 +60,10 @@
 		7CB3DEB127DC41C400628647 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		7CB3DEB327DC451500628647 /* OldSchoolTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldSchoolTextFieldStyle.swift; sourceTree = "<group>"; };
 		7CB3DEB527DC466000628647 /* View+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Border.swift"; sourceTree = "<group>"; };
-		7CB3DEB727DC4A1200628647 /* InnerShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InnerShadow.swift; sourceTree = "<group>"; };
+		7CB3DEBD27DC4D7400628647 /* FilterOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterOption.swift; sourceTree = "<group>"; };
+		7CB3DEBF27DC4DDA00628647 /* SegmentControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentControl.swift; sourceTree = "<group>"; };
+		7CB3DEC127DC55AD00628647 /* ComposeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeButton.swift; sourceTree = "<group>"; };
+		7CB3DEC327DC579A00628647 /* MoreButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,15 +114,14 @@
 		7CB3DE8427DC3CF200628647 /* MailboxUI */ = {
 			isa = PBXGroup;
 			children = (
+				7CB3DEBC27DC4D5F00628647 /* Navigation */,
+				7CB3DEBB27DC4D5300628647 /* Search Bar */,
+				7CB3DEBA27DC4D4B00628647 /* Empty State */,
+				7CB3DEB927DC4D3E00628647 /* Extensions */,
 				7CB3DE8527DC3CF200628647 /* MailboxUIApp.swift */,
 				7CB3DE8727DC3CF200628647 /* ContentView.swift */,
 				7CB3DE8927DC3CF400628647 /* Assets.xcassets */,
 				7CB3DE8B27DC3CF400628647 /* Preview Content */,
-				7CB3DEAF27DC3DAB00628647 /* EmptyState.swift */,
-				7CB3DEB127DC41C400628647 /* SearchBar.swift */,
-				7CB3DEB327DC451500628647 /* OldSchoolTextFieldStyle.swift */,
-				7CB3DEB527DC466000628647 /* View+Border.swift */,
-				7CB3DEB727DC4A1200628647 /* InnerShadow.swift */,
 			);
 			path = MailboxUI;
 			sourceTree = "<group>";
@@ -140,6 +149,44 @@
 				7CB3DEA227DC3CF400628647 /* MailboxUIUITestsLaunchTests.swift */,
 			);
 			path = MailboxUIUITests;
+			sourceTree = "<group>";
+		};
+		7CB3DEB927DC4D3E00628647 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7CB3DEB527DC466000628647 /* View+Border.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7CB3DEBA27DC4D4B00628647 /* Empty State */ = {
+			isa = PBXGroup;
+			children = (
+				7CB3DEAF27DC3DAB00628647 /* EmptyState.swift */,
+			);
+			path = "Empty State";
+			sourceTree = "<group>";
+		};
+		7CB3DEBB27DC4D5300628647 /* Search Bar */ = {
+			isa = PBXGroup;
+			children = (
+				7CB3DEB127DC41C400628647 /* SearchBar.swift */,
+				7CB3DEB327DC451500628647 /* OldSchoolTextFieldStyle.swift */,
+			);
+			path = "Search Bar";
+			sourceTree = "<group>";
+		};
+		7CB3DEBC27DC4D5F00628647 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				7CB3DEBD27DC4D7400628647 /* FilterOption.swift */,
+				7CB3DEBF27DC4DDA00628647 /* SegmentControl.swift */,
+				7CB3DEC127DC55AD00628647 /* ComposeButton.swift */,
+				7CB3DEC327DC579A00628647 /* MoreButton.swift */,
+				7C5C1DAF27DC586900A3455A /* NavigationTitleView.swift */,
+				7C5C1DB127DC5C9500A3455A /* HalfPill.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,11 +321,16 @@
 			files = (
 				7CB3DEB027DC3DAB00628647 /* EmptyState.swift in Sources */,
 				7CB3DEB227DC41C400628647 /* SearchBar.swift in Sources */,
-				7CB3DEB827DC4A1200628647 /* InnerShadow.swift in Sources */,
 				7CB3DEB427DC451500628647 /* OldSchoolTextFieldStyle.swift in Sources */,
 				7CB3DE8827DC3CF200628647 /* ContentView.swift in Sources */,
+				7CB3DEC427DC579A00628647 /* MoreButton.swift in Sources */,
+				7C5C1DB227DC5C9500A3455A /* HalfPill.swift in Sources */,
+				7CB3DEBE27DC4D7400628647 /* FilterOption.swift in Sources */,
 				7CB3DEB627DC466000628647 /* View+Border.swift in Sources */,
 				7CB3DE8627DC3CF200628647 /* MailboxUIApp.swift in Sources */,
+				7C5C1DB027DC586900A3455A /* NavigationTitleView.swift in Sources */,
+				7CB3DEC227DC55AD00628647 /* ComposeButton.swift in Sources */,
+				7CB3DEC027DC4DDA00628647 /* SegmentControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
