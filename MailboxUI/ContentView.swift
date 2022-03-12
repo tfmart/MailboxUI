@@ -12,7 +12,6 @@ struct ContentView: View {
         ZStack(alignment: .top) {
             EmptyState()
                 .padding(.top)
-                .edgesIgnoringSafeArea(.bottom)
             SearchBar()
                 .padding(.top, 46)
                 .disabled(true)
