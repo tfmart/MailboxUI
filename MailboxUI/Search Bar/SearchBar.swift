@@ -10,6 +10,10 @@ import SwiftUI
 struct SearchBar: View {
     @State var searchTerm: String = ""
     
+    var placeholderColor: Color {
+        return Color(red: 0.702, green: 0.702, blue: 0.702)
+    }
+    
     var background: some View {
         LinearGradient(colors: [
             Color(red: 0.867, green: 0.875, blue: 0.875),
@@ -22,12 +26,22 @@ struct SearchBar: View {
     }
     
     var body: some View {
-        TextField("\(Image(systemName: "magnifyingglass")) Search",
-                  text: $searchTerm)
-            .textFieldStyle(.oldSchool)
-            .padding(6)
-            .background(background)
-            .frame(height: 48)
+        ZStack(alignment: .leading) {
+            TextField("", text: $searchTerm)
+                .textFieldStyle(.oldSchool)
+                .padding(6)
+                .background(background)
+                .frame(height: 48)
+            Group {
+                Text("\(Image(systemName: "magnifyingglass"))")
+                    .font(.system(size: 14,
+                                  weight: .bold,
+                                  design: .default)) +
+                Text(" Search")
+            }
+            .foregroundColor(placeholderColor)
+            .padding(.leading, 18)
+        }
     }
 }
 

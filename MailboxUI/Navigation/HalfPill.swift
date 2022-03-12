@@ -9,7 +9,8 @@ import SwiftUI
 
 struct HalfPill: Shape {
     var isLeading: Bool
-    
+    let cornerRadius = 32
+
     var corners: UIRectCorner {
         if isLeading {
             return [.topRight, .bottomRight]
@@ -17,11 +18,23 @@ struct HalfPill: Shape {
             return [.topLeft, .bottomLeft]
         }
     }
+
     func path(in rect: CGRect) -> Path {
         let path = UIBezierPath(roundedRect: rect,
                                 byRoundingCorners: corners,
                                 cornerRadii:
-                                    CGSize(width: 32, height: 32))
+                                    CGSize(width: cornerRadius, height: cornerRadius))
+        return Path(path.cgPath)
+    }
+}
+
+struct NavigationShape: Shape {
+    let cornerRadius = 8
+    
+    func path(in rect: CGRect) -> Path {
+        let path = UIBezierPath(roundedRect: rect,
+                                byRoundingCorners: [.topLeft, .topRight],
+                                cornerRadii: .init(width: cornerRadius, height: cornerRadius))
         return Path(path.cgPath)
     }
 }
@@ -33,6 +46,8 @@ struct HalfPill_Previews: PreviewProvider {
                 .foregroundColor(.red)
             HalfPill(isLeading: false)
                 .foregroundColor(.blue)
+            NavigationShape()
+                .foregroundColor(.green)
         }
     }
 }

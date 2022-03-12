@@ -9,14 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ZStack(alignment: .top) {
-            EmptyState()
-                .edgesIgnoringSafeArea(.bottom)
-            VStack(spacing: 3) {
-                NavigationTitleView()
-                SearchBar()
+        VStack(spacing: 3) {
+            NavigationTitleView()
+            ZStack(alignment: .top) {
+                EmptyState()
+                    .edgesIgnoringSafeArea(.bottom)
+                VStack(spacing: 3) {
+                    SearchBar()
+                        .disabled(true)
+                }
             }
-        }.preferredColorScheme(.light)
+        }
+        .preferredColorScheme(.dark)
     }
 }
 

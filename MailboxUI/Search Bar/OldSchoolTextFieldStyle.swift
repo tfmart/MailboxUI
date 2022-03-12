@@ -31,7 +31,7 @@ extension TextFieldStyle where Self == OldSchoolTextFieldStyle  {
 struct OldSchoolTextField_Previews: PreviewProvider {
     @State static var text: String = ""
     static var previews: some View {
-        TextField("Serach", text: $text)
+        TextField("Search", text: $text)
             .padding()
     }
 }
