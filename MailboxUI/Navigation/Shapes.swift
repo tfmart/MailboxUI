@@ -1,5 +1,5 @@
 //
-//  HalfPill.swift
+//  Shapes.swift
 //  MailboxUI
 //
 //  Created by Tomas Martins on 12/03/22.
@@ -39,7 +39,7 @@ struct NavigationShape: Shape {
     }
 }
 
-struct HalfPill_Previews: PreviewProvider {
+struct Shapes_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
             HalfPill(isLeading: true)

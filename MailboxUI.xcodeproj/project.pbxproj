@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7C5C1DB027DC586900A3455A /* NavigationTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5C1DAF27DC586900A3455A /* NavigationTitleView.swift */; };
-		7C5C1DB227DC5C9500A3455A /* HalfPill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5C1DB127DC5C9500A3455A /* HalfPill.swift */; };
+		7C5C1DB227DC5C9500A3455A /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5C1DB127DC5C9500A3455A /* Shapes.swift */; };
 		7CB3DE8627DC3CF200628647 /* MailboxUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB3DE8527DC3CF200628647 /* MailboxUIApp.swift */; };
 		7CB3DE8827DC3CF200628647 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB3DE8727DC3CF200628647 /* ContentView.swift */; };
 		7CB3DE8A27DC3CF400628647 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB3DE8927DC3CF400628647 /* Assets.xcassets */; };
@@ -45,7 +45,7 @@
 
 /* Begin PBXFileReference section */
 		7C5C1DAF27DC586900A3455A /* NavigationTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTitleView.swift; sourceTree = "<group>"; };
-		7C5C1DB127DC5C9500A3455A /* HalfPill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfPill.swift; sourceTree = "<group>"; };
+		7C5C1DB127DC5C9500A3455A /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
 		7CB3DE8227DC3CF200628647 /* MailboxUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MailboxUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CB3DE8527DC3CF200628647 /* MailboxUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailboxUIApp.swift; sourceTree = "<group>"; };
 		7CB3DE8727DC3CF200628647 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -184,7 +184,7 @@
 				7CB3DEC127DC55AD00628647 /* ComposeButton.swift */,
 				7CB3DEC327DC579A00628647 /* MoreButton.swift */,
 				7C5C1DAF27DC586900A3455A /* NavigationTitleView.swift */,
-				7C5C1DB127DC5C9500A3455A /* HalfPill.swift */,
+				7C5C1DB127DC5C9500A3455A /* Shapes.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -324,7 +324,7 @@
 				7CB3DEB427DC451500628647 /* OldSchoolTextFieldStyle.swift in Sources */,
 				7CB3DE8827DC3CF200628647 /* ContentView.swift in Sources */,
 				7CB3DEC427DC579A00628647 /* MoreButton.swift in Sources */,
-				7C5C1DB227DC5C9500A3455A /* HalfPill.swift in Sources */,
+				7C5C1DB227DC5C9500A3455A /* Shapes.swift in Sources */,
 				7CB3DEBE27DC4D7400628647 /* FilterOption.swift in Sources */,
 				7CB3DEB627DC466000628647 /* View+Border.swift in Sources */,
 				7CB3DE8627DC3CF200628647 /* MailboxUIApp.swift in Sources */,
